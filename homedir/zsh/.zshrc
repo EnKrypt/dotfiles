@@ -12,6 +12,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Prezto theme
+autoload -Uz promptinit
+promptinit
+prompt agnoster
+
 # Cycle through history based on characters already typed on the line
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
