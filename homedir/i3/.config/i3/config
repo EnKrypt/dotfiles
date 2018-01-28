@@ -122,6 +122,7 @@ gaps inner 10
 
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id compton -i 0.6
+exec --no-startup-id redshift
 
 # startup operations (on every restart)
 
