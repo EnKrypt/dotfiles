@@ -3,6 +3,7 @@ URxvt*letterSpace:          -1
 URxvt*foreground:           #f0f0f0
 URxvt*background:           #000000
 URxvt*scrollBar:            false
+URxvt*secondaryWheel:       1
 URxvt*saveLines:            12000
 URxvt*transparent:          true
 URxvt*shading:              25
