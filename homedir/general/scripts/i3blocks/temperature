@@ -1,0 +1,23 @@
+#!/bin/bash
+
+temp=`sensors | grep Core | awk '{print $3}' | sed s/\+//g | sort -r | head -1`
+temp=${temp:: -2}
+
+color="#ffffff"
+
+if (( $(echo "$temp>50" | bc -l) ))
+then
+    color="#ffff00"
+fi
+
+if (( $(echo "$temp>65" | bc -l) ))
+then
+    color="#ffa500"
+fi
+
+if (( $(echo "$temp>75" | bc -l) ))
+then
+    color="#ff0000"
+fi
+
+echo "<span color='$color'>$temp°C</span>"
