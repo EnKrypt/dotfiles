@@ -28,4 +28,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 @reboot /home/arvind/ts3server/ts3server_startscript.sh start
 @reboot /home/arvind/.dw/start.sh
 
-0 0 */7 * * /home/arvind/.dw/switchKeysAndDeploy.sh > /var/log/dnscrypt-wrapper.log
+0 0 */1 * * /home/arvind/.dw/switchKeysAndDeploy.sh > /var/log/dnscrypt-wrapper.log
