@@ -1,3 +1,3 @@
 #!/bin/bash
 cd homedir
-stow * --target ~
+stow * --adopt --target ~
