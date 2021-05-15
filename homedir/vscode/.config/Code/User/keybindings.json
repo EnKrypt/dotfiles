@@ -29,5 +29,19 @@
         "key": "ctrl+shift+tab",
         "command": "editor.action.formatDocument",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.view.extension.gitlens"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
     }
 ]
