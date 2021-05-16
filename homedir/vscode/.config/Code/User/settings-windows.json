@@ -24,7 +24,24 @@
     "terminal.integrated.fontSize": 12,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "terminal.integrated.shell.windows": "C:\\Users\\EnKrypt\\scoop\\apps\\git\\current\\bin\\bash.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Bash": {
+            "path": "C:\\Users\\EnKrypt\\scoop\\apps\\git\\current\\bin\\bash.exe",
+            "icon": "terminal"
+        }
+    },
     "terminal.integrated.scrollback": 2000,
     "git.enableSmartCommit": true,
     "gitlens.advanced.messages": {
@@ -33,18 +50,12 @@
         "suppressFileNotUnderSourceControlWarning": false,
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": true,
-        "suppressWelcomeNotice": true
+        "suppressNoRepositoryWarning": false
     },
     "explorer.confirmDelete": false,
     "terminal.external.windowsExec": "C:\\Users\\EnKrypt\\Google Drive\\Archive\\Documents\\Tools\\ConEmu\\ConEmu64.exe",
     "workbench.colorTheme": "Monokai",
     "typescript.updateImportsOnFileMove.enabled": "never",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
     "editor.suggestSelection": "first",
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.keymap": "alternate",
@@ -54,26 +65,7 @@
         "headstock",
         "intonated"
     ],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "workbench.activityBar.visible": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "python.formatting.provider": "yapf",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    "terminal.integrated.defaultProfile.windows": "Bash",
     // "editor.formatOnSave": true
 }
